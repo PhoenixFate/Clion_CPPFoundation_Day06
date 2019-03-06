@@ -14,20 +14,20 @@ public:
 class Sheep:virtual public Animal
 {
 public:
-
+    virtual void fun(){}
 };
 
 //虚基类 Tuo
 class Tuo:virtual public Animal
 {
 public:
-
+    virtual void fun(){}
 };
 
 class SheepTuo:public Sheep,public Tuo
 {
 public:
-
+    virtual void fun(){}
 };
 
 class Test
@@ -45,13 +45,14 @@ void test1101()
     st.Tuo::age=20;
     cout<<st.Sheep::age<<endl;
     cout<<st.Tuo::age<<endl;
+    cout<<"sizeof(Sheep): "<< sizeof(Sheep)<<endl;
     cout<<"sizeof(SheepTuo): "<< sizeof(SheepTuo)<<endl;
     cout<<st.age<<endl;
     cout<<"sizeof(Test): "<<sizeof(Test)<<endl;
 }
 
 
-int main11()
+int main()
 {
     test1101();
     return 0;

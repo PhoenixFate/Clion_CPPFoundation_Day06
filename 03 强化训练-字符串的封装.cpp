@@ -29,7 +29,7 @@ void test301()
 }
 
 
-int main()
+int main3()
 {
     test301();
     return 0;
