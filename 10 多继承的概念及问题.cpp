@@ -44,7 +44,7 @@ void test1001()
     son.fun2();
 }
 
-int main()
+int main10()
 {
     return 0;
 }
