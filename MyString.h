@@ -16,6 +16,14 @@ public:
     MyString(const MyString&obj);
     ~MyString();
     int getSize();
+    //重载等号
+    MyString& operator=(MyString &str);
+    MyString& operator=(const char*str);
+    char&operator[](int index);
+
+    //重载+号运算符
+    MyString operator+(MyString &str);
+    MyString operator+(const char*str);
 private:
     char*str;
     int size;//不算\0
